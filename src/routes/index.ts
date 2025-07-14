@@ -5,6 +5,4 @@ const apiRouter = express.Router();
 
 apiRouter.use("/v1", v1Router);
 
-apiRouter.get("/", () => {});
-
 export default apiRouter;

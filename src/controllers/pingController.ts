@@ -1,8 +1,5 @@
-import { Request } from "express";
-export const pingCheck = (req: Request, res: Response) => {
-  console.log(req.body);
+import { Request, Response } from "express";
 
-  return res.status(200).json({
-    message: "pink check ok",
-  });
+export const pingCheck = (_req: Request, res: Response) => {
+  res.status(200).json({ message: "ping check ok" });
 };
